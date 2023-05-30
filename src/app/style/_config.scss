@@ -1,0 +1,9 @@
+$dark-text: #212529;
+$light-text: #ffffff;
+$dark-red: #b5121b;
+$light-red: #ef3e42;
+$green: #0b9b6a;
+
+@mixin easeOut {
+  transition: all .3s ease-out;
+}

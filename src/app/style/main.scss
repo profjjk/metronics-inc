@@ -1,0 +1,25 @@
+@import '_config';
+
+html {
+  box-sizing: border-box;
+  //color-scheme: light dark;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+main {
+  width: min(70ch, 100% - 4rem);
+}
+
+img, svg, video {
+  max-width: 100%;
+  display: block;
+}
