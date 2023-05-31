@@ -1,0 +1,150 @@
+@import 'config';
+
+nav {
+  padding: 0.5rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 2;
+  border-bottom: 1px solid $dark-red;
+  background-color: white;
+  .logo {
+    position: absolute;
+    padding: 0 3rem 0 3rem;
+    border-left: 1rem solid $dark-red;
+    display: flex;
+    align-items: center;
+    left: 0;
+    height: 100%;
+    background-color: $light-red;
+    font-size: 1.5rem;
+    font-weight: 900;
+    a {
+      text-decoration: none;
+      color: $light-text;
+    }
+  }
+  span {
+    font-size: 0.75rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    gap: 4rem;
+    li {
+      list-style: none;
+      text-align: center;
+    }
+  }
+  .nav-link {
+    color: $light-red;
+    text-decoration: none;
+  }
+  .nav-link {
+    &.active, &:hover {
+      font-weight: 700;
+      color: $dark-red;
+      @include easeOut;
+    }
+  }
+  .slant {
+    position: absolute;
+    right: 0;
+    height: 44px;
+    .dark {
+      border-bottom: 44px solid $light-red;
+      border-right: 1rem solid $dark-red;
+      position: absolute;
+      bottom: 0;
+      height: 0;
+      width: 0;
+    }
+    .light {
+      border-bottom: 44px solid $dark-red;
+      border-right: 1rem solid transparent;
+      position: absolute;
+      bottom: 0;
+      height: 0;
+      width: 0;
+      right: -2rem;
+    }
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  nav .logo {
+    padding: 0 2rem 0 2rem;
+  }
+  nav .hamburger-menu {
+    display: block;
+    z-index: 3;
+    margin-top: 4px;
+    cursor: pointer;
+    @include easeOut;
+    .line {
+      width: 30px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: $light-red;
+      @include easeOut;
+    }
+    &.open {
+      .line {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(6px, 6px);
+          background: $light-red;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -6px);
+          background: $light-red;
+        }
+      }
+    }
+  }
+  nav ul {
+    gap: 0;
+  }
+  .nav-menu {
+    position: absolute;
+    height: calc(100vh - 44px);
+    top: 44px;
+    left: 0;
+    right: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgba(239, 62, 66, 0.95);
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0, 0, 0);
+    border: 1rem solid $dark-red;
+    @include easeOut;
+
+    &.hidden {
+      visibility: hidden;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  nav .nav-link {
+    color: $light-text;
+    text-decoration: none;
+    font-size: 2rem;
+    &.active, &:hover {
+      font-weight: 700;
+      color: $light-text;
+      @include easeOut;
+    }
+  }
+}
