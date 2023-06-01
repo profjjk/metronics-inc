@@ -21,7 +21,7 @@
   h3 {
     font-weight: 700;
     font-size: 1.75rem;
-    color: $dark-red;
+    color: $light-red;
   }
   .call-box {
     display: flex;
@@ -33,7 +33,7 @@
         font-weight: 700;
         text-align: center;
         background-color: $green;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 1.5rem;
         border-radius: 10px;
 
         a {
@@ -55,13 +55,13 @@
       gap: 1rem;
     }
     h2 {
-      font-size: 1.25rem;
-    }
-    h3 {
       font-size: 1.5rem;
     }
+    h3 {
+      font-size: 1.25rem;
+    }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 }

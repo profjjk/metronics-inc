@@ -1,7 +1,7 @@
 import products from './products.json';
 import { ChangeEvent, MouseEventHandler, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import uuid from 'react-uuid';
 
 type Product = {

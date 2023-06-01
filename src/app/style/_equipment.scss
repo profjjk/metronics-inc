@@ -2,8 +2,16 @@
 
 #equipment {
   display: grid;
-  grid-template-columns: 1fr 4fr;
   gap: 4rem;
+
+  > div {
+    margin-left: 300px;
+  }
+
+  aside {
+    position: fixed;
+    width: 250px;
+  }
 
   .selectors {
     display: grid;
@@ -77,9 +85,13 @@
     }
 
     a {
+      text-transform: uppercase;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+      font-size: 0.8rem;
       align-self: end;
       color: $light-red;
-
+      margin-right: 0.5rem;
       &:hover {
         color: $dark-red;
       }
@@ -101,6 +113,12 @@
 
     aside {
       display: contents;
+      position: relative;
+      width: auto;
+    }
+
+    > div {
+      margin: 0;
     }
 
     .call-box {
@@ -130,6 +148,7 @@
         width: 100%;
         font-size: 1.5rem;
         font-weight: 600;
+        border: 1px solid black;
         border-radius: 10px;
         cursor: pointer;
         background: transparent;
