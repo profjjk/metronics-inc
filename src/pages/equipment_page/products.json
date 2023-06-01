@@ -1,0 +1,71 @@
+[
+  {
+    "type": "A/C Machines",
+    "equipment": [
+      {
+        "name": "34788NI",
+        "description": "Premier R-134A refrigerant recovery, recycling, and recharging machine.",
+        "image": "assets/img/products/machines/robinair_34788NI.png",
+        "flyer": "assets/docs/robinair_34788NI_flyer.pdf"
+      },
+      {
+        "name": "34888HD",
+        "description": "Advanced R134A Heavy-Duty Recover, Recycle, Recharge Machine.",
+        "image": "assets/img/products/machines/robinair_34888HD.png",
+        "flyer": "assets/docs/robinair_34888HD_flyer.pdf"
+      },
+      {
+        "name": "17800C",
+        "description": "Multi-refrigerant recover, recycle, recharge machine.",
+        "image": "assets/img/products/machines/robinair_17800C.png",
+        "flyer": "assets/docs/robinair_17800C_flyer.pdf"
+      },
+      {
+        "name": "AC1234-4-SL",
+        "description": "Premier R-1234yf Recover, Recycle and Recharge Machine for Mobile Service.",
+        "image": "assets/img/products/machines/robinair_AC1234-4-SL.png",
+        "flyer": "assets/docs/robinair_AC1234-4-SL_flyer.pdf"
+      }
+    ]
+  },
+  {
+    "type": "Tools",
+    "equipment": [
+      {
+        "name": "Oil Injector R-134A",
+        "description": "Use this syringe-type injector to add oil to a fully pressurized A/C system.",
+        "image": "assets/img/products/tools/oil_injector_r134a.png"
+      },
+      {
+        "name": "Tank Adapter R-134A",
+        "description": "Tank adapter for 34288 models.",
+        "image": "assets/img/products/tools/tank_adapter.png"
+      }
+    ]
+  },
+  {
+    "type": "Accessories",
+    "equipment": [
+      {
+        "name": "Vinyl Dust Cover",
+        "description": "Protect your investment with a heavy-duty vinyl dust cover. Fits 34900, 34800-2K, and 17800B Series.",
+        "image": "assets/img/products/accessories/dust_cover.png"
+      },
+      {
+        "name": "Vehicle Database Card",
+        "description": "Confirm A/C system charge capacities directly from your Robinair A/C RRR machine for R-134a systems.",
+        "image": "assets/img/products/accessories/vehicle_database.png"
+      }
+    ]
+  },
+  {
+    "type": "Consumables",
+    "equipment": [
+      {
+        "name": "Printer Paper (3-pack)",
+        "description": "3 rolls of printer paper to suit the 30038 optional printer used with the 34788NI and 34788NI-H RRR machines.",
+        "image": "assets/img/products/consumables/printer_paper.png"
+      }
+    ]
+  }
+]

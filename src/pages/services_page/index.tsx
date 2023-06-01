@@ -36,6 +36,13 @@ export const ServicesPage = () => {
                     </p>
                 </div>
             </div>
+
+            <div className={'call-box'}>
+                <p>Call to schedule service:</p>
+                <p>
+                    <a href="tel:4153098160">(415) 309-8160</a>
+                </p>
+            </div>
         </main>
     )
 }
